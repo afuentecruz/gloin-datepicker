@@ -1,0 +1,18 @@
+<div class="epo-datepicker">
+    <input matInput #dateInput
+           (change)="checkDateFormat($event)"
+           (dateInput)="inputPickerDatePublication($event)"
+           [(ngModel)]="inputDateModel"
+           (keydown)="dateKeyDown($event)"
+           placeholder="{{placeholder}}"
+           [matDatepicker]="pickerDate"
+           [disabled]="isDisabled"
+           (focusout)="checkDateOnFocusOut()">
+    <mat-datepicker-toggle matSuffix [disabled]="isDisabled" [for]="pickerDate"></mat-datepicker-toggle>
+    <mat-datepicker #pickerDate (closed)="checkDateOnFocusOut()" [disabled]="isDisabled"
+                    (input)="isDateInput = true"></mat-datepicker>
+
+  <p *ngIf="wrongPublicationDate" role="alert" class="errorText">{{errorMessage}}</p>
+  <p *ngIf="errorMessage != null" role="alert" class="errorText"></p>
+
+</div>

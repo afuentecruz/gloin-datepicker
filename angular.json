@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "gloin-datepicker": {
+      "root": "projects/gloin-datepicker",
+      "sourceRoot": "projects/gloin-datepicker/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/gloin-datepicker/tsconfig.lib.json",
+            "project": "projects/gloin-datepicker/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/gloin-datepicker/src/test.ts",
+            "tsConfig": "projects/gloin-datepicker/tsconfig.spec.json",
+            "karmaConfig": "projects/gloin-datepicker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/gloin-datepicker/tsconfig.lib.json",
+              "projects/gloin-datepicker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "datepicker-lib"

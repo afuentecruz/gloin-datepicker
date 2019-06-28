@@ -1,0 +1,33 @@
+.epo-datepicker{
+
+    .dateInputFakeValue{
+      display: block;
+      position: relative;
+      flex: auto;
+      min-width: 0;
+      width: 180px;
+        //position:absolute;
+        z-index:16;
+        top:50%;
+        left:14px;
+        //display:inline-block;
+        transform:translateY(-50%);
+
+        color:#2A323D;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        font-size: 14px !important;
+        line-height: 1 !important;
+    }
+
+    .mat-form-field{
+        &-label {
+             top: 55% !important;
+
+         }
+    }
+.errorText {
+    color: #BE0F05;
+    padding: 4px 0px;
+  }
+}

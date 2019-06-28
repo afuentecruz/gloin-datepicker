@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "epo-datepicker": [
+        "dist/epo-datepicker"
+      ],
+      "epo-datepicker/*": [
+        "dist/epo-datepicker/*"
+      ]
+    }
   }
 }
