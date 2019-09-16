@@ -20,3 +20,6 @@ An improved version of the material datepicker with custom date format, live dat
 |disabled|boolean|false| Allows to enable/disable the input, allowing the input react to parent events
 |errorMessage|string|Wrong date format (YYYY/MM/DD)|A custom error message string, shown when the date format is invalid
 |onDateValidated|Event emitter|null|Emits the date value in **milliseconds** when it's validated
+
+NPM Package: https://www.npmjs.com/package/gloin-datepicker
+Git source code: 
