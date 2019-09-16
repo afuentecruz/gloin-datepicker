@@ -18,5 +18,5 @@ An improved version of the material datepicker with custom date format, live dat
 |defaultDateValue|number|null| the init value you want to be shown as default in the input and selected in the MatDatePicker component
 |placeholder|string|(YYYY/MM/DD)| The placeholder string to be shown in the input 
 |disabled|boolean|false| Allows to enable/disable the input, allowing the input react to parent events
-|errorMesdsage|string|Wrong date format (YYYY/MM/DD)|A custom error message string, shown when the date format is invalid
+|errorMessage|string|Wrong date format (YYYY/MM/DD)|A custom error message string, shown when the date format is invalid
 |onDateValidated|Event emitter|null|Emits the date value in **milliseconds** when it's validated

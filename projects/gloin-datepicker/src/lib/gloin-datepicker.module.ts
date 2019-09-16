@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { GloinDatepickerComponent } from './gloin-datepicker.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { GloinDatepickerComponent } from './gloin-datapicker/gloin-datepicker.component';
 import { MatDatepickerModule, DateAdapter, MAT_DATE_FORMATS, MatFormFieldModule} from '@angular/material';
-import { CustomDateAdapter } from './date-adapter';
+import { CustomDateAdapter } from './adapter/date-adapter';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';

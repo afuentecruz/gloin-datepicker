@@ -262,7 +262,7 @@ export class GloinDatepickerComponent implements OnInit, OnChanges {
         }
       }
       let firstMonthChar = rawDate.indexOf('/') + 1;
-      var month = rawDate.slice(firstMonthChar, rawDate.lastIndexOf('/'));
+      let month = rawDate.slice(firstMonthChar, rawDate.lastIndexOf('/'));
 
       if (month.length < 2) {
         while (month.length < 2) {
