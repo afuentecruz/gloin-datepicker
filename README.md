@@ -22,4 +22,5 @@ An improved version of the material datepicker with custom date format, live dat
 |onDateValidated|Event emitter|null|Emits the date value in **milliseconds** when it's validated
 
 NPM Package: https://www.npmjs.com/package/gloin-datepicker
+
 Git source code: https://github.com/afuentecruz/gloin-datepicker
